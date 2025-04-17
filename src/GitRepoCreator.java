@@ -23,14 +23,14 @@ public class GitRepoCreator {
             client.createRepo(params);
 
             // Success Message
-            System.out.println("✅ Repository created successfully!");
-            System.out.println("🌎 You can view it at:");
+            System.out.println(" Repository created successfully!");
+            System.out.println(" You can view it at:");
             System.out.println("https://github.com/" + githubUsername + "/test-repo-created-by-microsoftgui");
 
 
         } catch (Exception e) {
             // Error Handling
-            System.out.println("❌ Something went wrong while creating the GitHub repository.");
+            System.out.println(" Something went wrong while creating the GitHub repository.");
             e.printStackTrace();
         }
     }
