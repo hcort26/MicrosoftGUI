@@ -1,6 +1,6 @@
 # MicrosoftGUI - GitHub Repository Creator (Prototype)
 
-This application provides a graphical way to convert a local project into a Git repository and automatically push it to GitHub. 
+This application provides a graphical way to convert a local project into a Git repository and automatically push it to GitHub.
 
 ## Features
 
@@ -23,7 +23,6 @@ This application provides a graphical way to convert a local project into a Git 
 ## External Libraries
 
 This project requires two external Java libraries:
-
 
 | GitSubprocessClient | Allows running Git commands from Java | [GitSubprocessClient GitHub](https://github.com/danielnixon/git-subprocess-client-java) |
 | GitHubApiClient | Enables communication with GitHub API from Java | [GitHubApiClient GitHub](https://github.com/danielnixon/github-api-client-java) |
@@ -76,3 +75,9 @@ Always replace real tokens with placeholders when sharing code.
 ## Prototype Disclaimer
 
 This application is a prototype created for academic purposes and is not intended for production or commercial deployment. Functionality may be limited and subject to change.
+
+## Project Contributors
+
+- Henry
+- Shane
+- Phil
