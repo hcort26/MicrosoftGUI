@@ -6,6 +6,3 @@ bin/
 
 # Ignore external library JARs
 libs/*.jar
-
-# Ignore Mac system files (optional but smart)
-.DS_Store
