@@ -24,8 +24,8 @@ This application provides a graphical way to convert a local project into a Git 
 
 This project requires two external Java libraries:
 
-| GitSubprocessClient | Allows running Git commands from Java | [GitSubprocessClient GitHub](https://github.com/danielnixon/git-subprocess-client-java) |
-| GitHubApiClient | Enables communication with GitHub API from Java | [GitHubApiClient GitHub](https://github.com/danielnixon/github-api-client-java) |
+| GitSubprocessClient | Allows running Git commands from Java |
+| GitHubApiClient | Enables communication with GitHub API from Java |
 
 Both libraries should be manually downloaded and placed inside the `/libs` folder. They should be added to the project's referenced libraries in the IDE.
 
