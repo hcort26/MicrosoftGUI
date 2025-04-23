@@ -1,37 +1,30 @@
 import github.tools.client.GitHubApiClient;
-import github.tools.client.RequestParams; // 
+import github.tools.client.RequestParams;
 
 public class GitRepoCreator {
+    private GitHubApiClient client;
+    private String githubUsername;
 
-    public static void main(String[] args) {
+    public GitRepoCreator(String githubUsername, String githubToken) {
+        this.githubUsername = githubUsername;
+        this.client = new GitHubApiClient(githubUsername, githubToken);
+    }
 
-        String githubUsername = "Pkwiatkowski-ssj";
-        String githubToken = "YOUR_GITHUB_TOKEN_HERE";
-
-
-        // Create the GitHub API Client (with username and token)
-        GitHubApiClient client = new GitHubApiClient(githubUsername, githubToken);
-
-        // Create the parameters for the new repository
+    public String createRepo(String repoName, String description, boolean isPrivate) {
         RequestParams params = new RequestParams();
-        params.addParam("name", "test-repo"); // repo name
-        params.addParam("description", "Repo created by the Microsoft GUI application!"); // description
-        params.addParam("private", "false"); // true = private, false = public
+        params.addParam("name", repoName);
+        params.addParam("description", description);
+        params.addParam("private", String.valueOf(isPrivate));
 
         try {
-            // Create the repository
             client.createRepo(params);
-
-            // Success Message
-            System.out.println(" Repository created successfully!");
-            System.out.println(" You can view it at:");
-            System.out.println("https://github.com/" + githubUsername + "/test-repo-created-by-microsoftgui");
-
-
+            System.out.println("✅ GitHub repo created successfully!");
+            return "https://github.com/" + githubUsername + "/" + repoName;
         } catch (Exception e) {
-            // Error Handling
-            System.out.println(" Something went wrong while creating the GitHub repository.");
+            System.out.println("❌ Failed to create GitHub repository.");
             e.printStackTrace();
+            return null;
         }
     }
 }
+
