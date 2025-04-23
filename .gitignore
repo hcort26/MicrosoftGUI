@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+bin/
+=======
 # Ignore VS Code settings
 .vscode/
 
@@ -6,3 +9,4 @@ bin/
 
 # Ignore external library JARs
 libs/*.jar
+>>>>>>> ee73f14164f4ca2f3e4fa51888c71c07298723da

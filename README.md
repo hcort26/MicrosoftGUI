@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 # MicrosoftGUI - GitHub Repository Creator (Prototype)
 
 This application provides a graphical way to convert a local project into a Git repository and automatically push it to GitHub.
@@ -81,3 +83,4 @@ This application is a prototype created for academic purposes and is not intende
 - Henry
 - Shane
 - Phil
+>>>>>>> ee73f14164f4ca2f3e4fa51888c71c07298723da
