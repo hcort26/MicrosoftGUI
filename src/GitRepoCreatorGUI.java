@@ -27,7 +27,7 @@ public class GitRepoCreatorGUI extends JFrame {
 
         // Logo
         JLabel logoLabel = new JLabel();
-        ImageIcon logoIcon = new ImageIcon("ProjectLogo.png"); // path relative to working directory
+        ImageIcon logoIcon = new ImageIcon("ProjectLogo.png"); 
         logoLabel.setIcon(new ImageIcon(logoIcon.getImage().getScaledInstance(120, 120, Image.SCALE_SMOOTH)));
         logoLabel.setHorizontalAlignment(JLabel.CENTER);
         mainPanel.add(logoLabel, BorderLayout.NORTH);
@@ -98,7 +98,6 @@ public class GitRepoCreatorGUI extends JFrame {
             statusLabel.setText("✅ Repo created and pushed to GitHub.");
         }
     }
-
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             GitRepoCreatorGUI gui = new GitRepoCreatorGUI();
