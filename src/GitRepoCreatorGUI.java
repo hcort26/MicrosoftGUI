@@ -95,7 +95,7 @@ public class GitRepoCreatorGUI extends JFrame {
             GitProjectInitializer initializer = new GitProjectInitializer(projectPath);
             initializer.initializeProject(repoName, remoteUrl);
 
-            statusLabel.setText("✅ Repo created and pushed to GitHub.");
+            statusLabel.setText("✅ Repo created and pushed!");
         }
     }
     public static void main(String[] args) {
