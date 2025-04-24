@@ -1,9 +1,0 @@
-{
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "/Users/henry/Downloads/GitHubApiClient-v0.0.7.jar",
-        "/Users/henry/Downloads/GitSubprocessClient-v0.0.12.jar"
-    ]
-}
