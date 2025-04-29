@@ -42,23 +42,8 @@ Both libraries should be manually downloaded and placed inside the `/libs` folde
    - Open the Java Projects sidebar.
    - Under "Referenced Libraries," click the "+" icon and add both JAR files from the `/libs` folder.
 
-4. **Compile and Run the Project (Current Prototype Stage)**  
-   Because external libraries are manually managed, compile and run the application from the terminal:
-
-   Compile:
-
-   ```
-   javac -cp "libs/*" -d bin src/GitRepoCreator.java
-   ```
-
-   Run:
-
-   ```
-   java -cp "libs/*;bin" GitRepoCreator
-   ```
-
-5. **Running from the IDE (After GUI Integration is Complete)**  
-   Once the graphical user interface (GUI) is fully implemented, a launch configuration will allow you to run the application directly through the Play button in Visual Studio Code.
+4. Run the Application
+You can launch the application directly from Visual Studio Code using the Play button
 
 ## Usage Notes
 
