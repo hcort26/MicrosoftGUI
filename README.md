@@ -42,8 +42,8 @@ Both libraries should be manually downloaded and placed inside the `/libs` folde
    - Open the Java Projects sidebar.
    - Under "Referenced Libraries," click the "+" icon and add both JAR files from the `/libs` folder.
 
-4. Run the Application
-You can launch the application directly from Visual Studio Code using the Play button
+4. **Run the Application**
+   You can launch the application directly from Visual Studio Code using the Play button
 
 ## Usage Notes
 
