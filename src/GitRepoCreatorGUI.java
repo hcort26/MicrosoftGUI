@@ -14,7 +14,7 @@ public class GitRepoCreatorGUI extends JFrame {
     public GitRepoCreatorGUI() {
         setTitle("GitHub Repo Creator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500, 400);
+        setSize(500, 440);
         setLocationRelativeTo(null);
 
         initComponents();
@@ -68,6 +68,14 @@ public class GitRepoCreatorGUI extends JFrame {
 
         mainPanel.add(formPanel, BorderLayout.CENTER);
 
+        // Disclaimer
+        JLabel disclaimer = new JLabel("This application is a prototype and not intended for commercial use.");
+        disclaimer.setHorizontalAlignment(JLabel.CENTER);
+        disclaimer.setFont(new Font("Arial", Font.ITALIC, 11));
+        disclaimer.setForeground(Color.DARK_GRAY);
+        disclaimer.setBorder(BorderFactory.createEmptyBorder(5, 0, 10, 0));
+        mainPanel.add(disclaimer, BorderLayout.SOUTH);
+
         add(mainPanel);
     }
 
@@ -98,6 +106,7 @@ public class GitRepoCreatorGUI extends JFrame {
             statusLabel.setText("✅ Repo created and pushed!");
         }
     }
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             GitRepoCreatorGUI gui = new GitRepoCreatorGUI();
